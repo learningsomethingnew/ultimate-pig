@@ -31,7 +31,7 @@ Each turn, you have two choices:
 
 ##How to View Results
 ----------
-Open the ["Ultimate-Pig"]() file and view results.
+Open the ["Ultimate-Pig"](https://github.com/niccolley1/ultimate-pig/blob/master/Ultimate-Pig.ipynb) file and view results.
 
 
 
