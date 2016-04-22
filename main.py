@@ -1,4 +1,4 @@
-from player import BasePlayer
+from player import BasePlayer, RollFiveThenHold
 
 
 #####################
@@ -34,27 +34,28 @@ class Main():
 
     def win_lose(self):
         # Player 1 Wins
-        if self.player1.get_total_points() > \
-                self.player2.get_total_points():
-            print("Player 1 Wins")
-            self.game_results()
+        if self.player1.get_total_score() > \
+                self.player2.get_total_score():
+            #print("Player 1 Wins")
+            #self.game_results()
             # track stats of player 1
             self.player1.track_game_stats(1)
             self.player2.track_game_stats()
         # Player 2 Wins
-        elif self.player1.get_total_points() < \
-                self.player2.get_total_points():
-            print("Player 2 Wins")
-            self.game_results()
+        elif self.player1.get_total_score() < \
+                self.player2.get_total_score():
+            #print("Player 2 Wins")
+            #self.game_results()
             # track stats of player 2
             self.player1.track_game_stats()
             self.player2.track_game_stats(1)
         else:
-            print("It's a tie")
+            # print("It's a tie")
+            pass
 
     def game_results(self):
-        print("Player 1 points = {}".format(self.player1.get_total_points()))
-        print("Player 2 points = {}".format(self.player2.get_total_points()))
+        print("Player 1 points = {}".format(self.player1.get_total_score()))
+        print("Player 2 points = {}".format(self.player2.get_total_score()))
         self.player2.track_game_stats()
 
 
@@ -67,9 +68,9 @@ if __name__ == "__main__":
     f.main()
 
 
-
     # Roll 5 Player vs Roll 5
     r5_player1 = BasePlayer("Player1")
     r5_player2 = BasePlayer("Player2")
     g = Main(1000, r5_player1, r5_player2)
 
+    print(b_player1.get_total_score_list())

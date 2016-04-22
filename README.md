@@ -8,7 +8,7 @@ Simulate multiple games of pig solitaire with different playing styles to identi
 ##Pig Solitaire
 ----------
 ###Goal of the game
-Get the highest score in 7 turns
+Get the highest score in 7 turns and understand inheritance better.
 
 ###Rules
 Each turn, you have two choices:
@@ -29,9 +29,9 @@ Each turn, you have two choices:
 -  Add the turn total to your score.
 
 
-##How to Run
+##How to View Results
 ----------
-
+Open the ["Ultimate-Pig"]() file and view results.
 
 
 
@@ -45,8 +45,9 @@ Each turn, you have two choices:
 		 - If able to hold, will hold
  - Random player
 	 - based on random, determine
- - Smart player
-	 - adapts over time by using hats and buckets 
+ - Rolls (6-2 times) and then holds
+
 
 ####Game
+Manages the turns and who is currently rolling.
 
